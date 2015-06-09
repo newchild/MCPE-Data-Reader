@@ -10,7 +10,7 @@ namespace MCPE_Data_Reader
     {
 		private DB MCPEFile;
 		private string uncPath;
-        DataReader(string path)
+        public DataReader(string path)
 		{
 			FileStream file = new FileStream(path, FileMode.Open);
 			DeflateStream Unpacker = new DeflateStream(file, CompressionMode.Decompress);
